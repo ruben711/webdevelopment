@@ -1,0 +1,11 @@
+a::before {
+    content: "";
+    background: url("link.png");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
