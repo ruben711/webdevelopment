@@ -1,0 +1,38 @@
+.kalender {
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+}
+
+.kalender td, .kalender th {
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+}
+
+.kalender .month {
+    background: rgb(170,170,200);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.kalender .dagen th {
+    background: rgb(35,37,70);
+    color: rgb(200,190,240);
+    padding: 5px 0;
+}
+
+.prev, .next {
+    background: rgb(200,200,200) !important;
+}
+
+.kalender tbody tr td:first-child, .kalender tbody tr td:last-child {
+    background: rgb(255,220,220);
+}
+
+.feest {
+    background: rgb(250,120,120) !important;
+    color: black;
+    font-weight: bold;
+}
