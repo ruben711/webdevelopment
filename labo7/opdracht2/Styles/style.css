@@ -1,0 +1,26 @@
+table.vriendentabel {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid grey;
+}
+
+table.vriendentabel th {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid darkblue;
+    text-align: left;
+}
+
+table.vriendentabel td {
+    padding: 8px 10px;
+    border-bottom: 1px solid white;
+}
+
+
+table.vriendentabel tr:hover {
+    background-color: grey;
+}
