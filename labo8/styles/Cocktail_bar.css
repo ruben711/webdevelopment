@@ -1,0 +1,128 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #007e7e;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+#elixirs a:hover {
+    color: brown;
+}
+
+#imgHeader {
+    width: auto;
+    height: 300px;
+    margin-top: 0;
+}
+
+#elixirs > h1 {
+    color: black;
+}
+
+#elixirs > h2 {
+    color: red;
+}
+
+#elixirs {
+    float: right;
+    width: 30%;
+    margin: 10px;
+    background: url('../images/cocktail.gif') repeat-x top center;  /* herhaalt de afbeelding alleen horizontaal */
+    background-size: 10% auto;
+    padding: 20px;
+    border: 5px solid #a7cece;
+    box-sizing: border-box;
+}
+
+#elixirs p, #elixirs h1, #elixirs h2 {
+    text-align: center;
+}
+
+#content {
+    float: left;
+    width: 65%;
+    margin: 10px;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#guarantee {
+    background-color: #a7cece;
+    color: #444444;
+    padding: 20px;
+    margin: 30px;
+    border: 2px dotted white;
+    overflow: hidden;
+}
+
+#guarantee::before {
+    content: "";
+    display: block;
+    float: left;
+    background: url('../images/background.gif') no-repeat center;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+footer {
+    font-size: 0.5em;
+    text-align: center;
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.artist {
+    font-weight: bold;
+}
+
+.cd {
+    font-style: italic;
+}
+#elixirs >h1 {
+    color: black;
+}
+
+#elixirs > h2#kleur_lemon_breeze{
+    color: #f2ce42;
+}
+
+#elixirs > h2#kleur_chai_chiller {
+    color: #745239;
+}
+
+#elixirs > h2#kleur_black_brain {
+    color: #7F0000;
+}
