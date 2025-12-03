@@ -1,0 +1,150 @@
+body{
+    width:95%;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    color: darkblue;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    background: url('../images/bgsky3.jpg') no-repeat center;
+    background-size: cover;
+}
+.top > .titel_1{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.top > .titel_2{
+    font-size: 240%;
+    font-weight: bold;
+}
+
+.vliegtuig{
+    float: right;
+    position: relative;
+    bottom: 160px;
+    right: 500px;
+}
+
+aside{
+    position: relative;
+    float: right;
+    width: 25%;
+    background: #dddddd;
+    border: 1px solid #999999;
+}
+aside p{
+    color:  #666666;
+    font-size: 90%;
+    margin: 0 10px 0 10px;
+}
+
+aside h3{
+    color: white;
+    background: blue;
+    text-align: center;
+    font-size: 120%;
+}
+
+main{
+    width: 75%;
+    margin-right: 10px;
+}
+
+main p{
+    margin-right: 10px;
+}
+
+.introblok {
+    display: flex;
+    background: white;
+    text-align: justify;
+}
+.introblok p{
+    margin: 0;
+}
+
+.introblok img {
+    height: auto;
+    margin: 20px 20px 0 20px;
+}
+
+.introduction {
+    color: black;
+    margin: 0;
+    padding: 20px 30px 20px 0;
+}
+
+.introduction span {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+main .foto img{
+    display: inline;
+    height: 180px;
+    width: 180px;
+    float: left;
+    padding: 10px;
+    background: white;
+    border: 1px dotted black;
+    margin: 0 20px 20px 0;
+}
+
+main .foto{
+    float: left;
+    margin: 0;
+    background: #999999;
+}
+
+main .gallery {
+    background: #999999;
+    overflow: hidden;
+    padding: 20px 20px 0 20px;
+}
+
+.bottom {
+    background: #666666;
+    color: white;
+    line-height: 2em;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+
+.bottom a {
+    color: white;
+}
+
+.bottom > div {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.bottom a:hover {
+    color: red;
+}
+
+.bottom ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom li ul {
+    margin-left: 30px;
+}
+
+footer p{
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+
+
