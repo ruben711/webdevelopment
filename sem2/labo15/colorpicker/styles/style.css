@@ -1,0 +1,35 @@
+.colorPicker
+{
+    border: 1px black solid;
+    width: fit-content;
+    padding: 10px;
+}
+.components
+{
+    display: flex;
+}
+.sliders
+{
+
+}
+.nummers
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.kleuren
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.kleur
+{
+    width: 100px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-left: 20px;
+}
