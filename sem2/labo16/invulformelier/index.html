@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>invulformulier</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Persoonlijke informatie</legend>
+
+        <div>
+            <label for="voornaam"> Voornaam*: </label>
+            <input type="text" id="voornaam" name="voornaam" placeholder="Your first name" required autofocus>
+        </div>
+
+        <div>
+            <label for="familienaam"> Familienaam*: </label>
+            <input type="text" id="familienaam" name = "familienaam" placeholder="Your last name" required>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Sport</legend>
+        <p>Welke sport beoefen je?</p>
+
+        <div>
+            <input type="checkbox" id="lopen" name="sport" value="Lopen">
+            <label for="lopen">Lopen</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="zwemmen" name="sport" value="Zwemmen">
+            <label for="zwemmen">Zwemmen</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="roeien" name="sport" value="Roeien">
+            <label for="roeien">Roeien</label>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Communicatievoorkeur</legend>
+        <p>Hoe kunnen we je bereiken?</p>
+
+        <div>
+            <input type="radio" name="communicatie" value="post" id="post">
+            <label for="post">Per post</label>
+        </div>
+
+        <div>
+            <input type="radio" name="communicatie" value="mail" id="mail">
+            <label for="mail">E-mail</label>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Favorieten</legend>
+
+        <div>
+            <label for="favo_film"> Favoriete film: </label>
+            <input type="text" id="favo_film" name="favo_film" >
+        </div>
+
+        <div>
+            <label for="favo_quote"> Favoriete quote: </label>
+            <input type="text" name="favo_quote" id="favo_quote" placeholder="Schrijf je favoriete quote">
+        </div>
+
+        <label for="favo_eten"> Favoriete eten: </label>
+        <select name="favo_eten" id="favo_eten" size="3" multiple>
+            <option value="hamburger">Hamburger</option>
+            <option value="hot-dog">Hot-dog</option>
+            <option value="pizza">Pizza</option>
+        </select>
+
+        <div>
+
+            <label for="favo_browser"> Favoriete browser: </label>
+            <input type="text" id="favo_browser" name="favo_browser">
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Beveiliging & contact</legend>
+
+        <div>
+
+            <label for="password"> Wachtwoord*: </label>
+            <input type="password" id="password"  name="password" required>
+        </div>
+
+        <div>
+
+            <label for="email"> E-mailadres: </label>
+            <input type="email" id="email" name="email" placeholder="Geef je e-mailadres in">
+        </div>
+        <div>
+
+            <label for="favo_site"> Favoriete site: </label>
+            <input type="url" id="favo_site" placeholder="Geef de URL van je favoriete site" name="favo_site">
+
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Extra informatie</legend>
+
+
+        <div>
+
+            <label for="favo_number"> Favoriete getal tussen 1-10: </label>
+            <input type="number" min="1" max="10"  id="favo_number" name="favo_number">
+        </div>
+
+
+        <div>
+
+            <label for="favo_number_slider"> Favoriete getal tussen 11-1000: </label>
+            <input type="range" min="11" max="1000" id="favo_number_slider" name="favo_number_slider">
+        </div>
+
+
+        <div>
+
+            <label for="geboorte"> Wanneer ben je geboren? </label>
+            <input type="date" name="geboorteDatum" id="geboorte">
+
+        </div>
+
+        <div>
+            <label for="postcode"> Belgische postcode*: </label>
+            <input type="text" id="postcode" name="postcode" required placeholder="9999" pattern="^([1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-8][0-9]|999[0-2])$">
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Varia</legend>
+
+        <div>
+
+            <label for="iets"> Zoeken naar iets: </label>
+            <input type="search" id="iets" name="search" >
+        </div>
+
+        <div>
+
+            <label for="favo_kleur"> Wat is je lievelingskleur? </label>
+            <input type="color" id="favo_kleur" name="favo_kleur">
+        </div>
+
+        <input type="file" id="file" name="file">
+    </fieldset>
+
+    <input type="submit" value="Submit" name="submit">
+</form>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
