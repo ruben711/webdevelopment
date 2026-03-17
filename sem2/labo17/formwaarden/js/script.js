@@ -1,14 +1,10 @@
 const init = () => {
     const knop = document.getElementById("button");
-
     knop.addEventListener("click", (e) => {
         e.preventDefault();
-
         const isRoker = document.getElementById("isRoker").checked;
-
         const talen = document.getElementsByName("moedertaal");
         let gekozenTaal = "";
-
         for (let i = 0; i < talen.length; i++) {
             if (talen[i].checked) {
                 gekozenTaal = talen[i].value;
