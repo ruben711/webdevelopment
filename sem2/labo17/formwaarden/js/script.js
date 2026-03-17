@@ -1,35 +1,44 @@
-const setup = () => {
-    document.getElementById("button").addEventListener("click", (event) => {
-        event.preventDefault();
+const init = () => {
+    const knop = document.getElementById("button");
 
-        const roker = document.getElementById("isRoker").checked;
+    knop.addEventListener("click", (e) => {
+        e.preventDefault();
 
-        const taal = document.getElementsByName("moedertaal");
-        let moedertaal = "";
-        for (let i = 0; i < taal.length; i++) {
-            if (taal[i].checked) moedertaal = taal[i].value;
+        const isRoker = document.getElementById("isRoker").checked;
+
+        const talen = document.getElementsByName("moedertaal");
+        let gekozenTaal = "";
+
+        for (let i = 0; i < talen.length; i++) {
+            if (talen[i].checked) {
+                gekozenTaal = talen[i].value;
+                break;
+            }
         }
 
-        const land = document.getElementById("land").value;
+        const buurland = document.getElementById("land").value;
 
-        const opties = document.getElementById("bestelling").options;
-        const bestelling = [];
-        for (let i = 0; i < opties.length; i++) {
-            if (opties[i].selected) bestelling.push(opties[i].value);
+        const select = document.getElementById("bestelling");
+        const gekozenBestelling = [];
+
+        for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].selected) {
+                gekozenBestelling.push(select.options[i].value);
+            }
         }
 
-        const resultaat = document.getElementById("resultaat");
-        resultaat.innerHTML =
-            "Is roker: " + roker +
-            "<br>Moedertaal: " + moedertaal +
-            "<br>Buurland: " + land +
-            "<br>Bestelling: " + bestelling.join(", ");
+        const output = document.getElementById("resultaat");
+        output.innerHTML =
+            "Is roker: " + isRoker +
+            "<br>Moedertaal: " + gekozenTaal +
+            "<br>Buurland: " + buurland +
+            "<br>Bestelling: " + gekozenBestelling.join(", ");
 
-        console.log("Is roker: " + roker);
-        console.log("Moedertaal: " + moedertaal);
-        console.log("Favoriete buurland: " + land);
-        console.log("Bestelling: " + bestelling.join(", "));
+        console.log("Is roker:", isRoker);
+        console.log("Moedertaal:", gekozenTaal);
+        console.log("Favoriete buurland:", buurland);
+        console.log("Bestelling:", gekozenBestelling.join(", "));
     });
 };
 
-window.addEventListener("load", setup);
+window.addEventListener("load", init);

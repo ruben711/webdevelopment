@@ -1,25 +1,29 @@
-const setup = () => {
-    const gemeenten = [];
+const init = () => {
+    let lijstGemeenten = [];
+    let invoerGemeente;
 
     while (true) {
-        const invoer = prompt("Geef een gemeente in (of 'stop' om te stoppen):");
+        invoerGemeente = prompt("Voer een gemeente in (typ 'stop' om te stoppen):");
 
-        if (invoer === null || invoer.toLowerCase() === "stop") break;
+        if (invoerGemeente === null || invoerGemeente.toLowerCase() === "stop") {
+            break;
+        }
 
-        if (invoer.trim() !== "") {
-            gemeenten.push(invoer.trim());
+        let naam = invoerGemeente.trim();
+        if (naam !== "") {
+            lijstGemeenten.push(naam);
         }
     }
 
-    gemeenten.sort();
+    lijstGemeenten.sort();
 
-    const keuzelijst = document.getElementById("gemeentes");
+    const selectElement = document.getElementById("gemeentes");
 
-    for (let i = 0; i < gemeenten.length; i++) {
-        const optie = document.createElement("option");
-        optie.textContent = gemeenten[i];
-        keuzelijst.appendChild(optie);
+    for (let i = 0; i < lijstGemeenten.length; i++) {
+        const option = document.createElement("option");
+        option.textContent = lijstGemeenten[i];
+        selectElement.appendChild(option);
     }
 };
 
-window.addEventListener("load", setup);
+window.addEventListener("load", init);
