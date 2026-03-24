@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Colorpicker</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
+<div class="container">
+    <div class="sliders">
+
+        <div>
+            <input type="range" class="rood_slider" min="0" max="255">
+            <span>
+            <span>rood</span>
+            <span id="rood_value"> 255 </span>
+        </span>
+        </div>
+        <div>
+            <input type="range" class="groen_slider" min="0" max="255">
+            <span>
+            <span>groen</span>
+            <span id="groen_value"> 128 </span>
+        </span>
+        </div>
+        <div>
+            <input type="range" class="blauw_slider" min="0" max="255">
+            <span>
+            <span>blauw</span>
+            <span id="blauw_value"> 128 </span></span>
+            </span>
+        </div>
+    </div>
+    <div id="color-box"></div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
