@@ -1,0 +1,14 @@
+#playfield{
+    width: 600px;
+    height: 800px;
+    border: 2px solid black;
+    position: relative;
+    margin-top: 20px;
+}
+
+#target{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
