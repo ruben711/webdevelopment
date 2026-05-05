@@ -1,0 +1,15 @@
+.card-google .card-header {
+    background-color: blue;
+}
+
+.card-youtube .card-header {
+    background-color: red;
+}
+
+.card-x .card-header {
+    background-color: lightblue;
+}
+
+.card-instagram .card-header {
+    background-color: pink;
+}
