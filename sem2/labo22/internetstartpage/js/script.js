@@ -122,7 +122,7 @@ const verwerkGaKnop = () => {
 
     if (!commando) {
         window.alert(
-            "Ongeldig commando. Gebruik /g, /y, /x of /i"
+            "Ongeldig commando. Gebruik /g, /y, /x of /i."
         );
         return;
     }
